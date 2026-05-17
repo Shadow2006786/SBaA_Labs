@@ -1,0 +1,6 @@
+<START:person> Taras Shevchenko <END> is a famous Ukrainian poet.
+I read a book by <START:person> Lesya Ukrainka <END> yesterday.
+<START:person> Ivan Franko <END> was a prominent writer.
+Did you see <START:person> Lina Kostenko <END> at the event?
+<START:person> Bohdan Khmelnytsky <END> was a great leader.
+We are studying the works of <START:person> Taras Shevchenko <END> in class.
