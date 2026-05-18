@@ -1,0 +1,12 @@
+GREETING Hello there
+GREETING Good morning
+GREETING Hi bot
+WEATHER What is the weather today
+WEATHER Do I need an umbrella
+WEATHER Tell me the forecast
+HELP I need assistance
+HELP Can you help me
+HELP How does this work
+FAREWELL Goodbye
+FAREWELL See you later
+FAREWELL Bye
