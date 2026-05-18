@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    # Цей рядок каже Spring виконати import.sql після того, як Hibernate створить таблиці
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  # Додай також цей блок, щоб Spring знав, що ініціалізація завжди потрібна
+  sql:
+    init:
+      mode: always
