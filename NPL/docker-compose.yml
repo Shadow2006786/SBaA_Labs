@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  nlp-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: opennlp-nlp-app
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - OPENNLP_MODELS_PATH=/app/models
+      - JAVA_OPTS=-Xms512m -Xmx2g
+    volumes:
+      - ./models:/app/models:ro
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 3G
+        reservations:
+          memory: 1G
+    restart: unless-stopped
